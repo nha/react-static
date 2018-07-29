@@ -70,6 +70,7 @@ function common(config) {
       minimize: true,
       minimizer: [
         new UglifyJsPlugin({
+          ecma:8,
           cache: true,
           parallel: true,
           sourceMap: true, // set to true if you want JS source maps
